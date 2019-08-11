@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<application>
+    <display-name>Resident Tracking Application</display-name>
+
+    <module>
+        <web>
+            <web-uri>Resident_Tracking.war</web-uri>
+            <context-root>/resident_tracking</context-root>
+        </web>
+    </module>
+  
+</application>

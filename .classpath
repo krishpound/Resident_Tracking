@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="WebRoot/lib/batik-awt-util-1.6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/lib/batik-dom-1.6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/lib/batik-svggen-1.6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/lib/batik-util-1.6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/lib/batik-xml-1.6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/lib/cewolf-1.1-ulf.jar"/>
+	<classpathentry kind="lib" path="WebRoot/lib/jcommon-1.0.14.jar"/>
+	<classpathentry kind="lib" path="WebRoot/lib/jfreechart-1.0.11.jar"/>
+	<classpathentry kind="lib" path="WebRoot/lib/jxl.jar"/>
+	<classpathentry kind="lib" path="WebRoot/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="WebRoot/lib/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="C:/home/jars/javax.servlet-5.1.12.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

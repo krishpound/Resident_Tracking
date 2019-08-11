@@ -1,0 +1,35 @@
+
+
+.commonCombo {
+				height:18px;
+				cursor:hand;
+				border: 0px solid #ffffff;  //2D69B7;     
+	  	 }
+	  	 
+.decorCombo {
+		height:18px;
+		border: 1px solid #2D69B7;
+	    } 	
+.leftPattern {
+		border-left-style:solid;
+		border-left-width:1px;
+		border-right-style:none;
+		border-right-width:medium;
+		border-top-style:solid;
+		border-top-width:1px;
+		border-bottom-style:solid;
+		border-bottom-width:1px;
+
+		}
+		
+.rightPattern {
+		border-left-style:none;
+		border-left-width:medium;
+		border-right-style:solid;
+		border-right-width:1px; 
+		border-top-style:solid; 
+		border-top-width:1px;
+		border-bottom-style:solid;
+		border-bottom-width:1px;
+
+		}

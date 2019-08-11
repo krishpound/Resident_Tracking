@@ -1,0 +1,307 @@
+/* Resident Tracking UI style */
+
+/*  properties */
+
+BODY.common  {
+						font-family: Verdana, Arial, Helvetica, sans;
+						COLOR: #03328A;
+/*						SCROLLBAR-FACE-COLOR: #d9dac8;
+						SCROLLBAR-HIGHLIGHT-COLOR: #d9dac8;
+						SCROLLBAR-SHADOW-COLOR: #d9dac8;
+						SCROLLBAR-3DLIGHT-COLOR: #78acff; 
+						SCROLLBAR-ARROW-COLOR: #000000; 
+						SCROLLBAR-TRACK-COLOR: #efefef; 
+						SCROLLBAR-DARKSHADOW-COLOR: #78acff; 
+						SCROLLBAR-BASE-COLOR: #d9dac8;
+*/
+					}
+
+a 			{	
+				font-family: Verdana, Arial, Helvetica, sans;
+				font-size: 10pt;
+				COLOR: #03328A;
+				text-decoration:none;
+   
+           	}                 
+           
+a.inline 	{	
+				font-family: Verdana, Arial, Helvetica, sans;
+				font-size: 10pt;
+				COLOR: #03328A;
+				text-decoration:none;
+				bgcolor: #e8eefa;
+                
+           	}                            
+
+
+a.rslink 	{	
+				font-family: Verdana, Arial, Helvetica, sans;
+				font-size: 14px;
+				COLOR: #03328A;
+				text-decoration:none;
+   
+           	}       
+           	
+a.resultset {						
+						font-size: 14px; 
+						font-family: Verdana;
+						color: #1a4d81;	
+			}		
+						    			                                                     
+a:hover 	{text-decoration:underline}
+
+td.header				{	
+						font-family: Verdana, Arial, Helvetica, sans;
+						font-size: 12pt;
+						COLOR: #03328A;
+						border: 0px none;
+						text-align: right;						
+					}
+
+.pushButton   		{
+						border: 1px outset #C3D9FF;
+						font-family:Arialsans-serif;
+						font-size:10pt; 
+						color:#000000; 
+						letter-spacing:1
+					}
+.textField       {
+						font-family: Verdana;
+						font-size: 10pt; 
+						color: #000000; 
+						border: 1px solid #C3D9FF;
+						background-color: #FFFFFF;
+
+					}
+.mandatory      {
+						font-family: AR Sans Serif;
+						font-size: 10pt; 
+						color: #000000; 
+						border: 1px solid #C3D9FF;
+						background-color: #FFFFCC;
+
+					}
+.disabled      {
+						font-family: AR Sans Serif;
+						font-size: 10pt; 
+						color: #919191; 
+						text-align:center;
+						border: 1px solid #C3D9FF;
+						background-color: #FFFFFF;
+
+					}
+.passwordField{			
+						font-family: Verdana;
+						font-size: 10pt; 
+						color: #000000; 
+						border: 1px solid #C3D9FF;
+						background-color: #FFFFFF;
+
+					}
+span.label       {
+						font-family: Verdana;
+						COLOR: #03328A;
+					}
+					
+tableheader    {
+						font-family: Verdana;
+						COLOR: #03328A;
+					}					
+					
+					
+					
+					
+span.heading1 {
+						font-family: Verdana;
+						font-size: 16pt  ;
+						FONT-WEIGHT: bold;
+						COLOR: #03328A;
+					}
+span.heading2 {
+						font-family: Verdana;
+						font-size: 14pt;
+						FONT-WEIGHT: normal;
+						COLOR: #03328a;
+					}
+span.heading3 {
+						font-family: Verdana;
+						font-size: 12pt;
+						FONT-WEIGHT: normal;
+						COLOR: #ffffff;
+												
+					}
+					
+span.heading4 {
+						font-family: Verdana;
+						font-size: 12pt;
+						FONT-WEIGHT: normal;
+						COLOR: #03328a;
+					}					
+		
+span.heading5 {
+						font-family: Verdana;
+						font-size: 11pt;
+						FONT-WEIGHT: normal;
+						COLOR: #03328A;
+					}						
+												
+span.boldface {
+						font-family: Verdana;
+						font-size: 10pt;
+						FONT-WEIGHT: bold;
+						COLOR: #03328A;
+					}
+span.normal   {
+						font-family: Verdana, Arial, Helvetica, sans;
+						font-size: 10pt;
+						FONT-WEIGHT: normal;
+						COLOR: #03328A;
+					}
+
+option.pgm_drop	{
+						width: 40;
+				}		
+
+span.okfeedback {
+						font-size: 8pt; 
+						color: #008000; 
+						vertical-align: middle;
+						display:none;
+						list-style-image: url('./images/ok.gif')
+					
+					}
+span.warningfeedback {
+						font-size: 8pt; 
+						color: #FF6600; 
+						vertical-align: middle;
+						display:none;
+						list-style-image: url('./images/warn.gif')
+					
+					}
+span.infofeedback {
+						font-size: 8pt; 
+						color: #0000FF; 
+						vertical-align: middle;
+						display:none;
+						list-style-image: url('./images/info.gif')
+					
+					}
+span.errorfeedback {
+						font-size: 8pt; 
+						color: #FF0000; 
+						vertical-align: middle;
+						display:none;
+						list-style-image: url('./images/error.gif')
+					
+					}
+
+.tableHeader   {
+						color:#f7f7f7;
+						background-color: #2d69b7;
+					}
+.rowColor       {
+						background-color:#F0F4FB;
+					}
+.rowAltColor    {
+						background-color:#D9E2F6;
+					}
+hr                 {
+						border: 0px none; 
+						background-color:#DDDDDD;  
+						height: 1px;
+						width: 100%; 
+						text-align: left;
+						margin: 1px;
+					}
+table.common {
+						background-color: #ffffff; 
+						border: #C3D9FF 1px solid;    
+					}
+.expandCollapse{
+						border:0px outset #C3D9FF; 
+						width:13px; color: #1A4D81; 
+						background-color:#E8EEFA; 
+						font-size:12pt;
+					 } 
+
+tr.odd				{
+						background-color:#ffffff;	
+					}	 
+
+
+
+tr.even				{
+						background-color:#e8eefa;	
+					}
+
+td.resultset		{						
+						font-size: 14px; 
+						font-family: Verdana;
+						color: #1a4d81;	
+					}	
+					
+						
+.formButton{
+						cursor:pointer;
+						border:outset 1px #ccc;
+						background:#e8eefa;
+						color:#ffffff;
+						font-weight:normal;
+						padding: 2px;
+						background:#e8eefa url(../images/lev0_bg1.gif);
+}
+
+.title{
+						background:#e8eefa url(../images/lev0_bg2.gif);
+	
+	}					
+					
+.pointer{				cursor:pointer;
+}
+			
+p			{
+						margin-left:  5%;
+						margin-right: 10%;
+						font-size: 15px;
+						}			 
+						
+p1			{
+						margin-left:  5%;
+						margin-right: 50%;
+						font-size: 15px;
+						}			 						
+						
+ol.ie		{
+						margin-left:  20%;
+						font-size: 16px;
+			}
+			
+ol.ff		{
+						margin-left:  16%;
+						font-size: 16px;
+			}			
+						 																		
+h3						{
+							margin-left:  5%;
+		
+						}						
+h4						{
+							margin-left:  5%;
+		
+						}												
+ul						{
+							margin-left:  7%;
+		
+						}							
+																		
+html	{
+			overflow: -moz-scrollbars-vertical;
+		}								
+		
+cewolf.IMG		{	
+				font-family: COURIER;
+				font-size: 14pt;
+				font-weight: normal;
+				color: #03328a;
+				background-color: red;
+		}

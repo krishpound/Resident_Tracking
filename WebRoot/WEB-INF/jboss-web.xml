@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jboss-web>
+ <!--  security-domain>java:/resident_tracking</security-domain>
+   <context-root>/resident_tracking</context-root>
+  --> 
+   <security-domain>example-jaas-realm</security-domain> 
+</jboss-web>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <context-param>
+  <description>Resident Tracking data source</description>
+  <param-name>rt_data_source</param-name>
+  <param-value>RT_DEV</param-value>
+ </context-param>
+ <servlet>
+  <display-name>summary</display-name>
+  <servlet-name>summary.do</servlet-name>
+  <servlet-class>resident_tracking.ActionSummaryQuery</servlet-class>
+ </servlet>
+ <servlet>
+  <display-name>detail</display-name>
+  <servlet-name>detail.do</servlet-name>
+  <servlet-class>resident_tracking.ActionDetailQuery</servlet-class>
+ </servlet>
+ <servlet>
+  <display-name>users</display-name>
+  <servlet-name>users.do</servlet-name>
+  <servlet-class>resident_tracking.ActionUserQuery</servlet-class>
+ </servlet>
+ <servlet>
+  <display-name>residents</display-name>
+  <servlet-name>residents.do</servlet-name>
+  <servlet-class>resident_tracking.ActionResidentQuery</servlet-class>
+ </servlet>
+ <servlet>
+  <display-name>querymenus</display-name>
+  <servlet-name>querymenus.do</servlet-name>
+  <servlet-class>resident_tracking.ActionQueryMenus</servlet-class>
+ </servlet>
+ <servlet>
+  <display-name>maintainUsers</display-name>
+  <servlet-name>maintainUsers.do</servlet-name>
+  <servlet-class>resident_tracking.ActionMaintainUser</servlet-class>
+ </servlet>
+ <servlet>
+  <display-name>header</display-name>
+  <servlet-name>header.do</servlet-name>
+  <servlet-class>resident_tracking.ActionHeader</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>Setup Servlet</servlet-name>
+  <servlet-class>resident_tracking.SetupServlet</servlet-class>
+  <init-param>
+   <param-name>props</param-name>
+   <param-value>c:/home/cfg/RT_mysql_config-JDBC.properties</param-value>
+  </init-param>
+  <load-on-startup>1</load-on-startup>
+ </servlet>
+ <servlet>
+  <servlet-name>CewolfServlet</servlet-name>
+  <servlet-class>de.laures.cewolf.CewolfRenderer</servlet-class>
+  <init-param>
+   <param-name>storage</param-name>
+   <param-value>de.laures.cewolf.storage.TransientSessionStorage</param-value>
+  </init-param>
+  <init-param>
+   <param-name>overliburl</param-name>
+   <param-value>overlib.js</param-value>
+  </init-param>
+  <load-on-startup>1</load-on-startup>
+ </servlet>
+ <servlet>
+  <servlet-name>download.do</servlet-name>
+  <servlet-class>resident_tracking.ActionDownload</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>SetupServlet</servlet-name>
+  <servlet-class>resident_tracking.SetupServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>maintainResidents.do</servlet-name>
+  <servlet-class>resident_tracking.ActionMaintainResident</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>maintainPrograms.do</servlet-name>
+  <servlet-class>resident_tracking.ActionMaintainProgram</servlet-class>
+ </servlet>
+ <servlet>
+  <display-name>changeYear</display-name>
+  <servlet-name>changeYear.do</servlet-name>
+  <servlet-class>resident_tracking.ActionChangeYear</servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>summary.do</servlet-name>
+  <url-pattern>/summary.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>detail.do</servlet-name>
+  <url-pattern>/detail.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>users.do</servlet-name>
+  <url-pattern>/users.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>residents.do</servlet-name>
+  <url-pattern>/residents.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>querymenus.do</servlet-name>
+  <url-pattern>/querymenus.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>maintainUsers.do</servlet-name>
+  <url-pattern>/maintainUsers.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>header.do</servlet-name>
+  <url-pattern>/header.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>CewolfServlet</servlet-name>
+  <url-pattern>/cewolf/*</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>download.do</servlet-name>
+  <url-pattern>/download.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>SetupServlet</servlet-name>
+  <url-pattern>/servlet/SetupServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>maintainResidents.do</servlet-name>
+  <url-pattern>/maintainResidents.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>maintainPrograms.do</servlet-name>
+  <url-pattern>/maintainPrograms.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>changeYear.do</servlet-name>
+  <url-pattern>/changeYear.do</url-pattern>
+ </servlet-mapping>
+ <security-constraint>
+  <web-resource-collection>
+   <web-resource-name>Maintain Users</web-resource-name>
+   <url-pattern>/maintainUsers.jsp</url-pattern>
+  </web-resource-collection>
+  <web-resource-collection>
+   <web-resource-name>Resident Summary Query</web-resource-name>
+   <url-pattern>/summary.jsp</url-pattern>
+  </web-resource-collection>
+  <web-resource-collection>
+   <web-resource-name>Resident Summary Result</web-resource-name>
+   <url-pattern>/summary_result.jsp</url-pattern>
+  </web-resource-collection>
+  <web-resource-collection>
+   <web-resource-name>Resident Detail Query</web-resource-name>
+   <url-pattern>/detail.jsp</url-pattern>
+  </web-resource-collection>
+  <web-resource-collection>
+   <web-resource-name>Resident Detail Result</web-resource-name>
+   <url-pattern>/detail_result.jsp</url-pattern>
+  </web-resource-collection>
+  <web-resource-collection>
+   <web-resource-name>Resident Query</web-resource-name>
+   <url-pattern>/residents.jsp</url-pattern>
+  </web-resource-collection>
+  <web-resource-collection>
+   <web-resource-name>Resident Result</web-resource-name>
+   <url-pattern>/residents_result.jsp</url-pattern>
+  </web-resource-collection>
+  <web-resource-collection>
+   <web-resource-name>Application Users Query</web-resource-name>
+   <url-pattern>/users.jsp</url-pattern>
+  </web-resource-collection>
+  <web-resource-collection>
+   <web-resource-name>Application Users Result</web-resource-name>
+   <url-pattern>/users_result.jsp</url-pattern>
+  </web-resource-collection>
+  <web-resource-collection>
+   <web-resource-name>Getting Started</web-resource-name>
+   <url-pattern>/gettingstarted.jsp</url-pattern>
+  </web-resource-collection>
+  <web-resource-collection>
+   <web-resource-name>General Help</web-resource-name>
+   <url-pattern>/generalhelp.jsp</url-pattern>
+  </web-resource-collection>
+  <web-resource-collection>
+   <web-resource-name>Welcome Page</web-resource-name>
+   <url-pattern>/index.jsp</url-pattern>
+  </web-resource-collection>
+  <web-resource-collection>
+   <web-resource-name>Maintain Users Result</web-resource-name>
+   <url-pattern>/maintainUsers_result.jsp</url-pattern>
+  </web-resource-collection>
+  <auth-constraint>
+   <role-name>user</role-name>
+   <role-name>administrator</role-name>
+  </auth-constraint>
+ </security-constraint>
+ 
+ <security-role>
+  <description>A role defined in the DBMS rt_role table</description>
+  <role-name>user</role-name>
+  </security-role>
+ <security-role>
+  <description>A role defined in DBMS rt_role table</description>
+  <role-name>administrator</role-name>
+ </security-role>
+
+ <login-config>
+  <auth-method>FORM</auth-method>
+  <realm-name>Example-jaas-realm</realm-name>
+  <form-login-config>
+   <form-login-page>/login.jsp</form-login-page>
+   <form-error-page>/loginError.jsp</form-error-page>
+  </form-login-config>
+ </login-config>
+ 
+</web-app>
